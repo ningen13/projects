@@ -1,2 +1,2 @@
-hello.java
- hello
+ru/qa/sandbox/hello.java
+ ru.qa.sandbox.hello
