@@ -1,6 +1,8 @@
 ru/qa/sandbox/Rectangle.java
  ru.qa.sandbox.Rectangle
-ru/qa/sandbox/hello.java
- ru.qa.sandbox.hello
 ru/qa/sandbox/Square.java
  ru.qa.sandbox.Square
+ru/qa/sandbox/Point.java
+ ru.qa.sandbox.Point
+ru/qa/sandbox/hello.java
+ ru.qa.sandbox.hello
