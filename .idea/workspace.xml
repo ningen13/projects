@@ -15,6 +15,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/sandbox">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -53,7 +56,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -63,7 +66,7 @@
       <recent name="D:\projects\sandbox\src\main\java\ru\qa\sandbox" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.PointTests">
     <configuration name="hello (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.qa.sandbox.hello" />
       <module name="sandbox.main" />
@@ -90,8 +93,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SquareTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.qa.sandbox.SquareTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PointTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.qa.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.qa.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.qa.sandbox.PointTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.qa.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.qa.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.qa.sandbox.SquareTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PointTests" />
+        <item itemvalue="TestNG.SquareTests" />
+        <item itemvalue="Gradle.SquareTests" />
         <item itemvalue="Application.hello (1)" />
       </list>
     </recent_temporary>
@@ -114,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1592467848531" />
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592952569644">
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593172475940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592952569644" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593172475940" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1592951250663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -130,34 +190,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592468023172" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1592953612493">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593797256284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592953612493" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1592953612493">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593797256284" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593797256284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592953612493" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1592953612493">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593797256284" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593797256284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592953612493" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1592953612493">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593797256284" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593797256284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592953612493" />
-    <state x="403" y="121" key="SettingsEditor" timestamp="1592488150046">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593797256284" />
+    <state x="403" y="121" key="SettingsEditor" timestamp="1593172410411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="403" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592488150046" />
+    <state x="403" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593172410411" />
     <state x="776" y="305" key="chooseDestDirectoryDialog" timestamp="1592562264527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="305" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592562264527" />
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1592950659907">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1593796569977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592950659907" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593796569977" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592951245284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
