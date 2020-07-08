@@ -8,6 +8,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/addressbook-web-tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/sandbox">
       <ProjectState />
     </projectState>
@@ -18,9 +21,16 @@
         <task path="$PROJECT_DIR$/sandbox">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/addressbook-web-tests">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
+              </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="sandbox" type="f1a62948:ProjectNode" />
@@ -52,7 +62,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sandbox/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -186,38 +196,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="390" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592562264672" />
-    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1592468023172">
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1594193447343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592468023172" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593798325039">
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594193447343" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1594210374603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593798325039" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593798325039">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594210374603" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1594210374603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593798325039" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593798325039">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594210374603" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1594210374603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593798325039" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593798325039">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594210374603" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1594210374603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593798325039" />
-    <state x="403" y="121" key="SettingsEditor" timestamp="1593172410411">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594210374603" />
+    <state x="403" y="121" key="SettingsEditor" timestamp="1594210064629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="403" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593172410411" />
+    <state x="403" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594210064629" />
     <state x="776" y="305" key="chooseDestDirectoryDialog" timestamp="1592562264527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="305" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592562264527" />
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1594026290234">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1594193395698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594026290234" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594193395698" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592951245284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
