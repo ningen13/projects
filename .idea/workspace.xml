@@ -77,6 +77,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -228,22 +229,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594210667757" />
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594332020337">
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594333694623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594332020337" />
-    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594332020337">
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
+    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594333694623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594332020337" />
-    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594332020337">
+    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
+    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594333694623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594332020337" />
-    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594332020337">
+    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
+    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594333694623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594332020337" />
+    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
+    <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject" timestamp="1594333380940">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1594333380940" />
+    <state x="853" y="415" key="ReplaceDuplicatesPrompt" timestamp="1594332495651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="853" y="415" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1594332495651" />
     <state x="403" y="121" key="SettingsEditor" timestamp="1594285344233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,6 +265,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594331430407" />
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog" timestamp="1594333642455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594333642455" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594210878810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
