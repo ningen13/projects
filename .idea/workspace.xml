@@ -93,7 +93,7 @@
       <recent name="D:\projects\sandbox\src\main\java\ru\qa\sandbox" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTest">
+  <component name="RunManager" selected="TestNG.CreateContact">
     <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -114,25 +114,22 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SquareTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.qa.sandbox.SquareTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="CreateContact" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.qa.addressbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.qa.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.qa.addressbook.CreateContact" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GroupCreationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
@@ -187,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateContact" />
         <item itemvalue="TestNG.GroupCreationTest" />
         <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="TestNG.PointTests" />
         <item itemvalue="TestNG.SquareTests" />
-        <item itemvalue="Gradle.SquareTests" />
       </list>
     </recent_temporary>
   </component>
@@ -229,26 +226,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594210667757" />
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594333694623">
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594336500563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
-    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594333694623">
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594336500563" />
+    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594336500563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
-    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594333694623">
+    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594336500563" />
+    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594336500563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
-    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594333694623">
+    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594336500563" />
+    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594336500563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594333694623" />
-    <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject" timestamp="1594333380940">
+    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594336500563" />
+    <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject" timestamp="1594336436347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1594333380940" />
+    <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1594336436347" />
     <state x="853" y="415" key="ReplaceDuplicatesPrompt" timestamp="1594332495651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,10 +262,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594331430407" />
-    <state x="690" y="283" width="540" height="482" key="extract.method.dialog" timestamp="1594333642455">
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog" timestamp="1594336202381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="283" width="540" height="482" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594333642455" />
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594336202381" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594210878810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
