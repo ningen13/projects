@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.qa.addressbook.appmanager.ApplicationManager;
 import ru.qa.addressbook.model.ContactData;
 
-public class CreateContact extends TestBase {
+public class CreateContactTest extends TestBase {
   public WebDriver wd;
 
   @Test
