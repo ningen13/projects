@@ -3,17 +3,18 @@ package ru.qa.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class NavigationHelper extends HelperBase {
+public class NavigationHelper {
+    private WebDriver wd;
 
     public NavigationHelper(WebDriver wd) {
-        super(wd);
+        this.wd = wd;
     }
 
     public void returnToGroupPage() {
-      click(By.linkText("group page"));
+      wd.findElement(By.linkText("group page")).click();
     }
 
     public void openGroupPage() {
-      click(By.linkText("groups"));
+      wd.findElement(By.linkText("groups")).click();
     }
 }
