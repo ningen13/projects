@@ -67,6 +67,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1dU7CyzH4bfLvdo4sVlXKSwqpBI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -83,12 +84,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\projects\sandbox\src\main\java\ru\qa\sandbox" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.qa.sandbox" />
     </key>
@@ -96,8 +94,11 @@
       <recent name="ru.qa.addressbook.appmanager" />
       <recent name="ru.qa.addressbook" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\sandbox\src\main\java\ru\qa\sandbox" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupDeleteTest">
+  <component name="RunManager" selected="TestNG.CreateContact">
     <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -188,8 +189,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupDeleteTest" />
         <item itemvalue="TestNG.CreateContact" />
+        <item itemvalue="TestNG.GroupDeleteTest" />
         <item itemvalue="TestNG.GroupCreationTest" />
         <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="TestNG.PointTests" />
@@ -222,58 +223,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592951250663" />
-    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1594635520398">
+    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1594647476968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594635520398" />
+    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594647476968" />
     <state x="761" y="390" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592562264672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="390" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592562264672" />
-    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1594210667757">
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1594646790312">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594210667757" />
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594507560370">
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594646790312" />
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594646826388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560370" />
-    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594507560369">
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594646826388" />
+    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594646826388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560369" />
-    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594507560369">
+    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594646826388" />
+    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594646826388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560369" />
-    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594507560370">
+    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594646826388" />
+    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594646826388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560370" />
+    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594646826388" />
     <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject" timestamp="1594336436347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1594336436347" />
-    <state x="853" y="415" key="ReplaceDuplicatesPrompt" timestamp="1594332495651">
+    <state x="853" y="415" key="ReplaceDuplicatesPrompt" timestamp="1594647345775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="853" y="415" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1594332495651" />
-    <state x="403" y="121" key="SettingsEditor" timestamp="1594285344233">
+    <state x="853" y="415" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1594647345775" />
+    <state x="403" y="121" key="SettingsEditor" timestamp="1594646794160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="403" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594285344233" />
+    <state x="403" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594646794160" />
     <state x="776" y="305" key="chooseDestDirectoryDialog" timestamp="1592562264527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="305" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592562264527" />
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1594631321825">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1594646316900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594631321825" />
-    <state x="690" y="283" width="540" height="482" key="extract.method.dialog" timestamp="1594633695951">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594646316900" />
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog" timestamp="1594647300337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="283" width="540" height="482" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594633695951" />
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594647300337" />
+    <state x="668" y="155" key="refactoring.ChangeSignatureDialog" timestamp="1594648340844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="155" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594648340844" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594210878810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
