@@ -86,14 +86,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\sandbox\src\main\java\ru\qa\sandbox" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.qa.sandbox" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.qa.addressbook.appmanager" />
       <recent name="ru.qa.addressbook" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\projects\sandbox\src\main\java\ru\qa\sandbox" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.GroupDeleteTest">
@@ -121,12 +122,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.qa.addressbook.*" />
+          <option name="PATTERN" value="ru.qa.addressbook.appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.qa.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.qa.addressbook.CreateContact" />
+      <option name="MAIN_CLASS_NAME" value="ru.qa.addressbook.tests.CreateContact" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -138,12 +139,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.qa.addressbook.*" />
+          <option name="PATTERN" value="ru.qa.addressbook.appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.qa.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.qa.addressbook.GroupCreationTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.qa.addressbook.tests.GroupCreationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -155,12 +156,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.qa.addressbook.*" />
+          <option name="PATTERN" value="ru.qa.addressbook.appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.qa.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.qa.addressbook.GroupDeleteTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.qa.addressbook.tests.GroupDeleteTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -221,10 +222,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592951250663" />
-    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1594507286772">
+    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1594635520398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594507286771" />
+    <state x="662" y="267" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594635520398" />
     <state x="761" y="390" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592562264672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,22 +234,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594210667757" />
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594336612686">
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom" timestamp="1594507560370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594336612686" />
-    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594336612686">
+    <state width="1877" height="618" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560370" />
+    <state width="1877" height="618" key="GridCell.Tab.0.center" timestamp="1594507560369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594336612686" />
-    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594336612686">
+    <state width="1877" height="618" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560369" />
+    <state width="1877" height="618" key="GridCell.Tab.0.left" timestamp="1594507560369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594336612686" />
-    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594336612686">
+    <state width="1877" height="618" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560369" />
+    <state width="1877" height="618" key="GridCell.Tab.0.right" timestamp="1594507560370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594336612686" />
+    <state width="1877" height="618" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594507560370" />
     <state x="651" y="198" width="617" height="668" key="RefactorJ.IntroduceParameterObject" timestamp="1594336436347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,14 +266,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="305" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592562264527" />
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1594506226771">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1594631321825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594506226771" />
-    <state x="690" y="283" width="540" height="482" key="extract.method.dialog" timestamp="1594507143153">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594631321825" />
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog" timestamp="1594633695951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="283" width="540" height="482" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594507143153" />
+    <state x="690" y="283" width="540" height="482" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594633695951" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594210878810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
