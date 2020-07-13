@@ -16,9 +16,9 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        click(By.name(String.valueOf(locator)));
-        wd.findElement(By.name(String.valueOf(locator))).clear();
-        wd.findElement(By.name(String.valueOf(locator))).sendKeys(text);
+        click(locator);
+        wd.findElement(locator).clear();
+        wd.findElement(locator).sendKeys(text);
     }
 
     private boolean isAlertPresent() {
