@@ -15,7 +15,7 @@ public class HelperBase {
         wd.findElement(locator).click();
     }
 
-    public void type(String locator, String text) {
+    public void type(By locator, String text) {
         click(By.name(locator));
         wd.findElement(By.name(locator)).clear();
         wd.findElement(By.name(locator)).sendKeys(text);
