@@ -57,4 +57,15 @@ public class ContactHelper extends HelperBase {
     public void pressOkWhenDeleting() {
         wd.switchTo().alert().accept();
     }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.xpath("//tr[@name='entry']"));
+    }
+
+    public void createSeparateContact(ContactData contact) {
+        addNewContact();
+        fillContactData(contact, true);
+        submitNewContact();
+        returnToHomePage();
+    }
 }
