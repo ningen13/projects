@@ -21,16 +21,16 @@ public class GroupHelper extends HelperBase {
     public void fillGroupForm(GroupData groupData) {
         type(By.name("group_name"), groupData.getName());
         wd.findElement(By.name("group_header")).clear();
-        wd.findElement(By.name("group_header")).sendKeys(groupData.getHeader());
+        type(By.name("group_header"), groupData.getHeader());
         type(By.name("group_footer"), groupData.getFooter());
         click(By.id("content"));
     }
 
-    public void type(By locator, String text) {
+    /*protected void type(By locator, String text) {
         click(locator);
         wd.findElement(locator).clear();
         wd.findElement(locator).sendKeys(text);
-    }
+    }*/
 
     public void createGroup() {
         click(By.name("new"));

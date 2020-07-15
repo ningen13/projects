@@ -22,11 +22,11 @@ public class ContactHelper extends HelperBase {
     }
 
     public void fillContactData(ContactData contactData, boolean creation) {
-        wd.findElement(By.name("firstname")).sendKeys(contactData.getFirstname());
-        wd.findElement(By.name("lastname")).sendKeys(contactData.getLastname());
-        wd.findElement(By.name("address")).sendKeys(contactData.getAddress());
-        wd.findElement(By.name("home")).sendKeys(contactData.getPhone());
-        wd.findElement(By.name("email")).sendKeys(contactData.getEmail());
+        type(By.name("firstname"), contactData.getFirstname());
+        type(By.name("lastname"), contactData.getLastname());
+        type(By.name("address"), contactData.getAddress());
+        type(By.name("home"), contactData.getPhone());
+        type(By.name("email"), contactData.getEmail());
         if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
         } else {
