@@ -1,6 +1,5 @@
 package ru.qa.addressbook.appmanager;
 
-import kotlin.collections.ArrayDeque;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,8 +36,15 @@ public class GroupHelper extends HelperBase {
         wd.findElement(locator).sendKeys(text);
     }*/
 
-    public void createGroup() {
+    public void clickCreateGroup() {
         click(By.name("new"));
+    }
+
+    public void createGroup() {
+        clickCreateGroup();
+        fillGroupForm(new GroupData("group1", null, null));
+        submitGroupCreation();
+        returnToGroupPage();
     }
 
     public void deleteSelectedGroups() {
@@ -62,7 +68,7 @@ public class GroupHelper extends HelperBase {
     }
 
     public void createSeparateGroup(GroupData group) {
-        createGroup();
+        clickCreateGroup();
         fillGroupForm(group);
         submitGroupCreation();
         returnToGroupPage();
@@ -81,7 +87,7 @@ public class GroupHelper extends HelperBase {
         List<WebElement> elements = wd.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements) {
             String name = element.getText();
-            String id = element.findElement(By.tagName("input")).getAttribute("value");
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             GroupData group = new GroupData(name, null, null, id);
             groups.add(group);
         }
