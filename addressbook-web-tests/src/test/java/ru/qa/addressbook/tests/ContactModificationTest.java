@@ -3,7 +3,6 @@ package ru.qa.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.qa.addressbook.model.ContactData;
-import ru.qa.addressbook.model.GroupData;
 
 import java.util.Comparator;
 import java.util.List;
@@ -16,7 +15,7 @@ public class ContactModificationTest extends TestBase {
             app.getContactHelper().createSeparateContact(new ContactData("alex", "w/e", null, null, null, "[none]"));
         }
         List<ContactData> before = app.getContactHelper().getContactList();
-        app.getContactHelper().checkHighestContact(before.size() - 1);
+        app.getContactHelper().checkContact(before.size() - 1);
 
         app.getContactHelper().initContactModification();
         ContactData contact = new ContactData("alex1", "w/e1", null, null, null, null, before.get(before.size() - 1).getId());

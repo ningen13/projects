@@ -51,8 +51,8 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("home page"));
     }
 
-    public void checkHighestContact(int index) {
-        wd.findElements(By.xpath("//tr[2]//td[1]")).get(index).click();
+    public void checkContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void pressDeleteButton() {

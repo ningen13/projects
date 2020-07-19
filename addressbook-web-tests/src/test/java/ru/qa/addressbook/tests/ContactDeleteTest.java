@@ -1,8 +1,11 @@
 package ru.qa.addressbook.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.qa.addressbook.model.ContactData;
 import ru.qa.addressbook.model.GroupData;
+
+import java.util.List;
 
 public class ContactDeleteTest extends TestBase {
 
@@ -11,8 +14,15 @@ public class ContactDeleteTest extends TestBase {
         if (! app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createSeparateContact(new ContactData("alex", "whatever", "some address here", "+712154121", "some@email.yes", "[none]"));
         }
-        app.getContactHelper().checkHighestContact(0);
+        List<ContactData> before = app.getContactHelper().getContactList();
+        app.getContactHelper().checkContact(before.size() - 1);
         app.getContactHelper().pressDeleteButton();
         app.getContactHelper().pressOkWhenDeleting();
+
+        List<ContactData> after = app.getContactHelper().getContactList();
+        Assert.assertEquals(after.size(), before.size() - 1);
+
+        before.remove(before.size() - 1);
+        Assert.assertEquals(before, after);
     }
 }
