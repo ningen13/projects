@@ -3,9 +3,14 @@ package ru.qa.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.qa.addressbook.model.ContactData;
+import ru.qa.addressbook.model.GroupData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
@@ -46,8 +51,8 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("home page"));
     }
 
-    public void checkHighestContact() {
-        click(By.xpath("//tr[2]//td[1]"));
+    public void checkHighestContact(int index) {
+        wd.findElements(By.xpath("//tr[2]//td[1]")).get(index).click();
     }
 
     public void pressDeleteButton() {
@@ -67,5 +72,17 @@ public class ContactHelper extends HelperBase {
         fillContactData(contact, true);
         submitNewContact();
         returnToHomePage();
+    }
+
+    public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<ContactData>();
+        List<WebElement> elements = wd.findElements(By.cssSelector("tr.entry"));
+        for (WebElement element : elements) {
+            String name = element.getText();
+            int id = Integer.parseInt(element.findElement(By.name("selected[]")).getAttribute("value"));
+            ContactData contact = new ContactData(name, "w/e", null, null, null, null, id);
+            contacts.add(contact);
+        }
+        return contacts;
     }
 }

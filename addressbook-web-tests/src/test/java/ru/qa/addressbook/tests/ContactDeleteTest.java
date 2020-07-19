@@ -11,7 +11,7 @@ public class ContactDeleteTest extends TestBase {
         if (! app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createSeparateContact(new ContactData("alex", "whatever", "some address here", "+712154121", "some@email.yes", "[none]"));
         }
-        app.getContactHelper().checkHighestContact();
+        app.getContactHelper().checkHighestContact(0);
         app.getContactHelper().pressDeleteButton();
         app.getContactHelper().pressOkWhenDeleting();
     }
