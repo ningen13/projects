@@ -27,10 +27,10 @@ public class CreateContactTest extends TestBase {
     List<ContactData> after = app.getContactHelper().getContactList();
     Assert.assertEquals(after.size(), before.size() + 1);
 
-    contact.setId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
+    contact.setId(after.stream().max(Comparator.comparingInt(ContactData::getId)).get().getId());
     before.add(contact);
 
-    Comparator<? super ContactData> byId = (c1, c2) -> Integer.compare(c1.getId(), c2.getId());
+    Comparator<? super ContactData> byId = Comparator.comparingInt(ContactData::getId);
     before.sort(byId);
     after.sort(byId);
 
