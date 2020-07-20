@@ -15,10 +15,11 @@ public class ContactModificationTest extends TestBase {
             app.getContactHelper().createSeparateContact(new ContactData("alex", "w/e", null, null, null, "[none]"));
         }
         List<ContactData> before = app.getContactHelper().getContactList();
-        app.getContactHelper().checkContact(before.size() - 1);
+        //app.getContactHelper().findContact(before.size() - 1);
 
         app.getContactHelper().initContactModification();
         ContactData contact = new ContactData("alex1", "w/e1", null, null, null, null, before.get(before.size() - 1).getId());
+        app.getContactHelper().fillContactData(contact, false);
         app.getContactHelper().submitModifiedContact();
         app.getContactHelper().returnToHomePage();
 
@@ -32,6 +33,6 @@ public class ContactModificationTest extends TestBase {
         before.sort(byId);
         after.sort(byId);
 
-        Assert.assertEquals(before, after);
+        Assert.assertEquals(after, before);
     }
 }

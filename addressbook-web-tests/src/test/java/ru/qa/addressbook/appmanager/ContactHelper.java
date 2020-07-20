@@ -40,7 +40,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void initContactModification() {
-        click(By.xpath("//tr[2]//td[8]//a[1]//img[1]"));
+        click(By.xpath("//tr[2]//td[8]"));
     }
 
     public void submitModifiedContact() {
@@ -53,6 +53,10 @@ public class ContactHelper extends HelperBase {
 
     public void checkContact(int index) {
         wd.findElements(By.name("selected[]")).get(index).click();
+    }
+
+    public void findContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index);
     }
 
     public void pressDeleteButton() {
@@ -69,20 +73,32 @@ public class ContactHelper extends HelperBase {
 
     public void createSeparateContact(ContactData contact) {
         addNewContact();
+        deleteData();
         fillContactData(contact, true);
         submitNewContact();
         returnToHomePage();
+    }
+
+    private void deleteData() {
+        wd.findElement(By.name("firstname")).clear();
+        wd.findElement(By.name("lastname")).clear();
+
     }
 
     public List<ContactData> getContactList() {
         List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
-            String name = element.getText();
+            WebElement lastNameCell = element.findElement(By.xpath("td[2]"));
+            String lastName = lastNameCell.getText();
+            WebElement firstNameCell = element.findElement(By.xpath("td[3]"));
+            String firstName = firstNameCell.getText();
             int id = Integer.parseInt(element.findElement(By.name("selected[]")).getAttribute("value"));
-            ContactData contact = new ContactData(name.split(" ").length > 1 ? name.split(" ")[1] : name, "w/e", null, null, null, null, id);
+            ContactData contact = new ContactData(firstName, lastName, null, null, null, null, id);
             contacts.add(contact);
         }
         return contacts;
     }
 }
+
+//            ContactData contact = new ContactData(name.split(" ").length > 1 ? name.split(" ")[1] : name, "w/e", null, null, null, null, id);
