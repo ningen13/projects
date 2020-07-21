@@ -67,7 +67,9 @@ public class ContactData {
         return "ContactData{" +
                 "firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
+                ", id='" + id + '\'' +
                 '}';
+
     }
 
     @Override
@@ -77,11 +79,14 @@ public class ContactData {
 
         ContactData that = (ContactData) o;
 
-        return firstname != null ? firstname.equals(that.firstname) : that.firstname == null;
+        if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
+        return lastname != null ? lastname.equals(that.lastname) : that.lastname == null;
     }
 
     @Override
     public int hashCode() {
-        return firstname != null ? firstname.hashCode() : 0;
+        int result = firstname != null ? firstname.hashCode() : 0;
+        result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+        return result;
     }
 }
