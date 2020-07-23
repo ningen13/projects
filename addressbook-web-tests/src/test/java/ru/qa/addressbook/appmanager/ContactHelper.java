@@ -48,7 +48,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void returnToHomePage() {
-        click(By.linkText("home page"));
+        click(By.id("logo"));
     }
 
     public void checkContact(int index) {
