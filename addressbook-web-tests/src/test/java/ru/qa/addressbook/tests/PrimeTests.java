@@ -6,13 +6,13 @@ import qa.sandbox.Primes;
 
 public class PrimeTests {
 
-    @Test
+    @Test(enabled = false)
     public void testPrimes() {
         Assert.assertTrue(Primes.isPrimeFast(Integer.MAX_VALUE));
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void testNonPrimes() {
         Assert.assertTrue(Primes.isPrime(Integer.MAX_VALUE -2));
     }
