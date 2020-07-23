@@ -18,11 +18,11 @@ public class ContactModificationTest extends TestBase {
         List<ContactData> before = app.getContactHelper().getContactList();
         //app.getContactHelper().findContact(before.size() - 1);
 
-        System.out.println(before.get(before.size() - 1).getId());
+        //System.out.println(before.get(before.size() - 1).getId());
         app.getContactHelper().initContactModification(before.size() + 1);
         ContactData contact = new ContactData("alex1", "w/e1", null, null, null, null, before.get(before.size() - 1).getId());
-        System.out.println(before.get(before.size() - 1).getId());
-        before.forEach(System.out::println);
+        //System.out.println(before.get(before.size() - 1).getId());
+        //before.forEach(System.out::println);
         app.getContactHelper().fillContactData(contact, false);
         app.getContactHelper().submitModifiedContact();
         app.getContactHelper().returnToHomePage();
@@ -37,9 +37,9 @@ public class ContactModificationTest extends TestBase {
         before.sort(byId);
         after.sort(byId);
 
-        before.forEach(System.out::println);
-        System.out.println("пробел");
-        after.forEach(System.out:: println);
+        //before.forEach(System.out::println);
+        //System.out.println("пробел");
+        //after.forEach(System.out:: println);
 
         Assert.assertEquals(after, before);
     }
