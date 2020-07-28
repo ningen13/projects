@@ -10,7 +10,9 @@ import ru.qa.addressbook.model.ContactData;
 import ru.qa.addressbook.model.GroupData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -39,8 +41,9 @@ public class ContactHelper extends HelperBase {
         }
     }
 
-    public void initContactModification(int index) {
-        click(By.xpath("//tr[" + index + "]//td[8]"));
+    public void initContactModificationById(int id) {
+        //click(By.xpath("//tr[" + id + "]//td[8]"));
+        click(By.cssSelector("a[href='edit.php?id=" + id + "']"));
     }
 
     public void submitModifiedContact() {
@@ -79,15 +82,15 @@ public class ContactHelper extends HelperBase {
         returnToHomePage();
     }
 
-    public void modify(List<ContactData> before, ContactData contact) {
-        initContactModification(before.size() + 1);
+    public void modify(ContactData contact) {
+        initContactModificationById(contact.getId());
         fillContactData(contact, false);
         submitModifiedContact();
         returnToHomePage();
     }
 
-    public void delete(int index) {
-        checkContact(index);
+    public void delete(ContactData contact) {
+        initContactModificationById(contact.getId());
         pressDeleteButton();
         pressOkWhenDeleting();
         returnToHomePage();
@@ -99,8 +102,8 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public List<ContactData> list() {
-        List<ContactData> contacts = new ArrayList<ContactData>();
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
             WebElement lastNameCell = element.findElement(By.xpath("td[2]"));
