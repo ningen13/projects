@@ -1,38 +1,20 @@
 package ru.qa.addressbook.model;
 
 public class ContactData {
-    private final String firstname;
-    private final String lastname;
-    private final String address;
-    private final String phone;
-    private final String email;
+    private String firstname;
+    private String lastname;
+    private String address;
+    private String phone;
+    private String email;
     private String group;
-    private int id;
+    private int id = Integer.MAX_VALUE;;
 
     public int getId() {
         return id;
     }
 
 
-    public ContactData(String firstname, String lastname, String address, String phone, String email, String group, int id) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.address = address;
-        this.phone = phone;
-        this.email = email;
-        this.group = group;
-        this.id = id;
-    }
 
-    public ContactData(String firstname, String lastname, String address, String phone, String email, String group) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.address = address;
-        this.phone = phone;
-        this.email = email;
-        this.group = group;
-        this.id = Integer.MAX_VALUE;
-    }
 
     public String getFirstname() {
         return firstname;
@@ -58,8 +40,24 @@ public class ContactData {
         return group;
     }
 
-    public void setId(int id) {
+    public ContactData withId(int id) {
         this.id = id;
+        return this;
+    }
+
+    public ContactData withFirstname(String firstname) {
+        this.firstname = firstname;
+        return this;
+    }
+
+    public ContactData withLastname(String lastname) {
+        this.lastname = lastname;
+        return this;
+    }
+
+    public ContactData withGroup(String group) {
+        this.group = group;
+        return this;
     }
 
     @Override

@@ -15,7 +15,7 @@ public class CreateContactTest extends TestBase {
   public void testCreateContact() throws Exception {
 
     List<ContactData> before = app.contact().list();
-    ContactData contact = new ContactData("alex", "w/e", null, null, null, "[none]");
+    ContactData contact = new ContactData().withFirstname("alex").withLastname("w/e").withGroup("[none]");
     app.contact().addNewContact();
     app.contact().fillContactData(contact, true);
     app.contact().submitNewContact();
@@ -23,7 +23,7 @@ public class CreateContactTest extends TestBase {
     List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size() + 1);
 
-    contact.setId(after.stream().max(Comparator.comparingInt(ContactData::getId)).get().getId());
+    contact.withId(after.stream().max(Comparator.comparingInt(ContactData::getId)).get().getId());
     before.add(contact);
 
     Comparator<? super ContactData> byId = Comparator.comparingInt(ContactData::getId);

@@ -16,7 +16,7 @@ public class GroupCreationTest extends TestBase {
     app.goTo().GroupPage();
     Groups before = app.group().all();
     GroupData group = new GroupData().withName("group1");
-    app.group().createGroup();
+    app.group().create(group);
     Groups after = app.group().all();
     group.withId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
     group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
