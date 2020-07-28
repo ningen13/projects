@@ -86,8 +86,8 @@ public class ContactHelper extends HelperBase {
         returnToHomePage();
     }
 
-    public void delete(List<ContactData> before) {
-        checkContact(before.size() - 1);
+    public void delete(int index) {
+        checkContact(index);
         pressDeleteButton();
         pressOkWhenDeleting();
         returnToHomePage();
