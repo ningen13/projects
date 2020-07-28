@@ -4,10 +4,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.qa.addressbook.model.ContactData;
+import ru.qa.addressbook.model.Contacts;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 public class ContactModificationTest extends TestBase {
 
@@ -21,18 +21,15 @@ public class ContactModificationTest extends TestBase {
     @Test
     public void testContactModification() {
 
-        Set<ContactData> before = app.contact().all();
+        Contacts before = app.contact().all();
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withFirstname("alex1").withLastname("w/e1").withId(modifiedContact.getId());
 
         app.contact().modify(contact);
 
-        Set<ContactData> after = app.contact().all();
+        Contacts after = app.contact().all();
         Assert.assertEquals(after.size(), before.size());
 
-        before.remove(modifiedContact);
-        before.add(contact);
-
-        Assert.assertEquals(after, before);
+        assertThat(after, equalTo(before.withoutAdded(modifiedContact).withAdded(contact)));
     }
 }

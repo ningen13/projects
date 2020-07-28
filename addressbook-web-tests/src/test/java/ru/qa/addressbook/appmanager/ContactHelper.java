@@ -1,18 +1,14 @@
 package ru.qa.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.qa.addressbook.model.ContactData;
-import ru.qa.addressbook.model.GroupData;
+import ru.qa.addressbook.model.Contacts;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -42,7 +38,6 @@ public class ContactHelper extends HelperBase {
     }
 
     public void initContactModificationById(int id) {
-        //click(By.xpath("//tr[" + id + "]//td[8]"));
         click(By.cssSelector("a[href='edit.php?id=" + id + "']"));
     }
 
@@ -54,8 +49,8 @@ public class ContactHelper extends HelperBase {
         click(By.id("logo"));
     }
 
-    public void checkContact(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();
+    public void checkContact(int id) {
+        click(By.xpath("//input[@id='" + id + "']"));
     }
 
     public void findContact(int index) {
@@ -90,7 +85,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void delete(ContactData contact) {
-        initContactModificationById(contact.getId());
+        checkContact(contact.getId());
         pressDeleteButton();
         pressOkWhenDeleting();
         returnToHomePage();
@@ -102,8 +97,8 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public Set<ContactData> all() {
-        Set<ContactData> contacts = new HashSet<ContactData>();
+    public Contacts all() {
+        Contacts contacts = new Contacts();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
             WebElement lastNameCell = element.findElement(By.xpath("td[2]"));
@@ -116,5 +111,3 @@ public class ContactHelper extends HelperBase {
         return contacts;
     }
 }
-
-//            ContactData contact = new ContactData(name.split(" ").length > 1 ? name.split(" ")[1] : name, "w/e", null, null, null, null, id);

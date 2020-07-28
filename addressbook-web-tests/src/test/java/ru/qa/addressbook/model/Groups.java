@@ -1,7 +1,6 @@
 package ru.qa.addressbook.model;
 
 import com.google.common.collect.ForwardingSet;
-import javafx.scene.Group;
 
 import java.util.HashSet;
 import java.util.Set;
