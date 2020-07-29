@@ -28,7 +28,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
         type(By.name("address"), contactData.getAddress());
-        type(By.name("home"), contactData.getPhone());
+        type(By.name("home"), contactData.getHomePhone());
         type(By.name("email"), contactData.getEmail());
         if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
@@ -39,6 +39,17 @@ public class ContactHelper extends HelperBase {
 
     public void initContactModificationById(int id) {
         click(By.cssSelector("a[href='edit.php?id=" + id + "']"));
+    }
+
+    public ContactData infoFromEditForm(ContactData contact) {
+        initContactModificationById(contact.getId());
+        String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
+        String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
+        String home = wd.findElement(By.name("home")).getAttribute("value");
+        String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
+        String work = wd.findElement(By.name("work")).getAttribute("value");
+        wd.navigate().back();
+        return new ContactData().withFirstname(firstname).withLastname(lastname).withId(contact.getId()).withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work);
     }
 
     public void submitModifiedContact() {
