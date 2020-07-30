@@ -34,7 +34,7 @@ public class ContactData {
         return homephone;
     }
 
-    public String getMobilephone() {
+    public String getMobilePhone() {
         return mobilephone;
     }
 
