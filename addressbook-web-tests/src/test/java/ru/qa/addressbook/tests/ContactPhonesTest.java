@@ -38,4 +38,27 @@ public class ContactPhonesTest extends TestBase {
     public static String cleaned(String phone) {
         return phone.replaceAll("\\s", "").replaceAll("[-()]", "");
     }
+
+
+    @Test
+    public void testContactEmails() {
+        app.goTo().goHomePage();
+        ContactData contact = app.contact().all().iterator().next();
+        ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
+
+        assertThat(contact.getAllEmails(), equalTo(mergeEmails(contactInfoFromEditForm)));
+    }
+
+    private String mergeEmails(ContactData contact) {
+        return (contact.getEmail() + "\n" + contact.getEmail2() + "\n" + contact.getEmail3());
+    }
+
+    @Test
+    public void testContactAddress() {
+        app.goTo().goHomePage();
+        ContactData contact = app.contact().all().iterator().next();
+        ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
+
+        assertThat(contact.getAddress(), equalTo(contactInfoFromEditForm.getAddress()));
+    }
 }
