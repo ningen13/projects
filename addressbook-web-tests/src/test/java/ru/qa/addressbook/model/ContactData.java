@@ -2,6 +2,8 @@ package ru.qa.addressbook.model;
 
 import ru.qa.addressbook.tests.ContactPhonesTest;
 
+import java.io.File;
+
 public class ContactData {
     private String firstname;
     private String lastname;
@@ -15,6 +17,16 @@ public class ContactData {
     private String group;
     private String allPhones;
     private String allEmails;
+    private File photo;
+
+    public File getPhoto() {
+        return photo;
+    }
+
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
 
     public String getAllPhones() {
         return allPhones;

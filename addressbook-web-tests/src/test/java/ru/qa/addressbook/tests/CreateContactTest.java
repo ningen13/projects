@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import ru.qa.addressbook.model.ContactData;
 import ru.qa.addressbook.model.Contacts;
 
+import java.io.File;
 import java.util.Comparator;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -17,7 +18,8 @@ public class CreateContactTest extends TestBase {
   public void testCreateContact() throws Exception {
 
     Contacts before = app.contact().all();
-    ContactData contact = new ContactData().withFirstname("alex").withLastname("w/e").withGroup("[none]");
+    File photo = new File("src/test/resources/dog.jpg");
+    ContactData contact = new ContactData().withFirstname("alex").withLastname("w/e").withGroup("[none]").withPhoto(photo);
     app.contact().addNewContact();
     app.contact().fillContactData(contact, true);
     app.contact().submitNewContact();
