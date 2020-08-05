@@ -1,5 +1,6 @@
 package ru.qa.addressbook.model;
 
+import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
@@ -7,8 +8,11 @@ import com.thoughtworks.xstream.annotations.XStreamOmitField;
 public class GroupData {
 
     @XStreamOmitField
+    @Expose
     private String name;
+    @Expose
     private String header;
+    @Expose
     private String footer;
     private int id = Integer.MAX_VALUE;;
 
