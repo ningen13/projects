@@ -1,13 +1,13 @@
 package ru.qa.addressbook.model;
 
 import com.google.gson.annotations.Expose;
-import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 
 import java.io.File;
 
 public class ContactData {
 
-    @XStreamOmitField
+    //@XStreamOmitField
 
     @Expose
     private String firstname;

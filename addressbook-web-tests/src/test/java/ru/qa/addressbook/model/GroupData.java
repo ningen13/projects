@@ -1,13 +1,11 @@
 package ru.qa.addressbook.model;
 
 import com.google.gson.annotations.Expose;
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
-@XStreamAlias("group")
+//@XStreamAlias("group")
 public class GroupData {
 
-    @XStreamOmitField
+    //@XStreamOmitField
     @Expose
     private String name;
     @Expose

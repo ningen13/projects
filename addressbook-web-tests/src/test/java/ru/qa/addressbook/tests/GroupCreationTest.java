@@ -2,7 +2,6 @@ package ru.qa.addressbook.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.thoughtworks.xstream.XStream;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.qa.addressbook.model.GroupData;
@@ -19,7 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GroupCreationTest extends TestBase {
 
 
-  @DataProvider
+  /*@DataProvider
   public Iterator<Object[]> validGroupsFromXml() throws IOException {
     try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.xml")))) {
       String xml = "";
@@ -33,7 +32,7 @@ public class GroupCreationTest extends TestBase {
       List<GroupData> groups = (List<GroupData>) xstream.fromXML(xml);
       return groups.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
     }
-  }
+  }*/
 
   @DataProvider
   public Iterator<Object[]> validGroupsFromJson() throws IOException {
